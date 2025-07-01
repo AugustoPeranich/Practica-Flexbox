@@ -1,10 +1,62 @@
 .item{
-    background-color: blueviolet;
+    background-color: rgb(64, 201, 222);
     padding: 20px;
     margin: 5px;
 }
 
 .contenedor{
+    width: 200px;
+    /*height: 500px*/
     display: flex;
-    flex-direction: row;
+    /* flex-direction: column; */
+    justify-content: center;
+    background-color: black;
+    /*align-items: flex-start; */
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+.decorado::after{
+    content:"🐾" ;
+}
+
+.decorado::before{
+    content:"🐾" ;
+}
+
+.intro::first-letter{
+    color:aquamarine
+}
+
+.boton{
+    border: none;
+    color: rgb(92, 50, 20);
+    background-color: chocolate;
+    transition:background-color 1.3s ease;
+
+}
+
+.boton:hover{
+    border:none;
+    background-color: rgb(227, 189, 34);
+    color:rgb(117, 67, 11)   
+
+
+}
+
+.boton2{
+  background-color: #4ecdc4;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 2s ease, background-color 4s ease;
+}
+.boton2:hover{
+  transform: scale(1.1) rotate(-2deg);
+  background-color: #3bbfb4;
 }
