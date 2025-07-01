@@ -1,0 +1,10 @@
+.item{
+    background-color: blueviolet;
+    padding: 20px;
+    margin: 5px;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+}
